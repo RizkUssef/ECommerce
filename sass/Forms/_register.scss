@@ -1,0 +1,522 @@
+.reg_form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    justify-content: center;
+    align-items: center;
+    .containt{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .reg{
+            font-size: 60px;
+            color: #3f4045;
+            margin-bottom: 30px;
+        }
+        form{
+            width: 80%;
+            margin: auto;
+            .zip{
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 40px;
+            }
+            .zip_address{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px; 
+            }
+            h1{
+                color: #3f4045;
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+            .reg_label{
+                color: #3f4045;
+                font-size: 20px;
+            }
+            .reg_inputs_seven,.reg_inputs_six,.reg_inputs_five,.reg_inputs_four,.reg_inputs_three,.reg_inputs_two,.reg_inputs_one{
+                width: 100%;
+                display: block;
+                margin-bottom: 30px;
+                margin-top: 10px;
+                height: 38px; 
+                color: #3f4045;
+                font-size: 20px;
+                &:focus{
+                    outline: none;
+                    border-bottom: 0.5px solid #3f4045;
+                    // transition-duration: 0.8s;
+                    transition: background-image 0.8s ease-in-out;
+                }
+            }
+            .reg_inputs_one{
+                border: none;
+                border-bottom: 0.5px solid #3f4045;
+                background-image: url("../img/Blob/n_input_1.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                // background-position: center;
+                &:focus{
+                    background-image: url("../img/Blob/f_input_1.svg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            .reg_inputs_two{
+                border: none;
+                border-bottom: 0.5px solid #3f4045;
+                background-image: url("../img/Blob/n_input_2.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                &:focus{
+                    background-image: url("../img/Blob/f_input_2.svg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            .reg_inputs_three{
+                border: none;
+                border-bottom: 0.5px solid #3f4045;
+                background-image: url("../img/Blob/n_input_3.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                &:focus{
+                    background-image: url("../img/Blob/f_input_3.svg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            .reg_inputs_four{
+                border: none;
+                border-bottom: 0.5px solid #3f4045;
+                background-image: url("../img/Blob/n_input_4.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                &:focus{
+                    background-image: url("../img/Blob/f_input_4.svg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            .reg_inputs_five{
+                border: none;
+                border-bottom: 0.5px solid #3f4045;
+                background-image: url("../img/Blob/n_input_2.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                &:focus{
+                    background-image: url("../img/Blob/f_input_2.svg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            .reg_inputs_six{
+                border: none;
+                border-bottom: 0.5px solid #3f4045;
+                background-image: url("../img/Blob/n_input_3.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                &:focus{
+                    background-image: url("../img/Blob/f_input_3.svg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            .reg_inputs_seven{
+                border: none;
+                border-bottom: 0.5px solid #3f4045;
+                background-image: url("../img/Blob/n_input_4.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                &:focus{
+                    background-image: url("../img/Blob/f_input_4.svg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            .submit{
+                    background-image: url("../img/Blob/logout1.svg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 51px;
+                    background-color: transparent;
+                    border: none;
+                    width: 76px;
+                    color: #3f4045;
+                    font-size: 20px;
+                    position: relative;
+                    transition-duration: 0.7s;
+                    cursor: pointer;
+                    margin-left: 32%;
+                    margin-top: 30px;
+                    &:hover{
+                        background-image: url("../img/Blob/logout2.svg");
+                        color: #E9E8DE;
+                        text-shadow: 2px 2px 4px #E9E8DE;
+                        
+                    }
+            }
+        }
+        p{
+            color: #3f4045;
+            font-size: 20px;
+            margin-top: 30px;
+            width: 40%;
+            a{
+                color: #548686;
+                text-decoration: none;
+            }
+        }
+    }
+    .gif_video{
+        display: none;
+    }
+}
+.padd_top_50{
+    padding-top: 50px;
+}
+  
+.mg_top_50{
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .reg_form{
+        .containt{
+            form{
+                width: 354px;
+                .submit{
+                    margin-left: 37%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+    .reg_form{
+        .containt{
+            form{
+                width: 500px;
+                .submit{
+                    margin-left: 37%;
+                }
+                .reg_inputs_one{
+                    background-image: url("../img/Blob/n1_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f1_500.svg");
+                    }
+                }
+                .reg_inputs_two{
+                    background-image: url("../img/Blob/n5_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f5_500.svg");
+                    }
+                }
+                .reg_inputs_three{
+                    background-image: url("../img/Blob/n6_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f6_500.svg");
+                    }
+                }
+                .reg_inputs_four{
+                    background-image: url("../img/Blob/n7_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f7_500.svg");
+                    }
+                }
+                .reg_inputs_five{
+                    background-image: url("../img/Blob/n2_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f2_500.svg");
+                    }
+                }
+                .reg_inputs_six{
+                    background-image: url("../img/Blob/n3_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f3_500.svg");
+                    }
+                }
+                .reg_inputs_seven{
+                    background-image: url("../img/Blob/n4_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f4_500.svg");
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .reg_form{
+        padding-top: 50px;
+        flex-direction: row;
+        .containt{
+            form{
+                width: 500px;
+                .submit{
+                    margin-left: 37%;
+                }
+                .reg_inputs_one{
+                    background-image: url("../img/Blob/n1_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f1_500.svg");
+                    }
+                }
+                .reg_inputs_two{
+                    background-image: url("../img/Blob/n5_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f5_500.svg");
+                    }
+                }
+                .reg_inputs_three{
+                    background-image: url("../img/Blob/n6_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f6_500.svg");
+                    }
+                }
+                .reg_inputs_four{
+                    background-image: url("../img/Blob/n7_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f7_500.svg");
+                    }
+                }
+                .reg_inputs_five{
+                    background-image: url("../img/Blob/n2_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f2_500.svg");
+                    }
+                }
+                .reg_inputs_six{
+                    background-image: url("../img/Blob/n3_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f3_500.svg");
+                    }
+                }
+                .reg_inputs_seven{
+                    background-image: url("../img/Blob/n4_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f4_500.svg");
+                    }
+                }
+            }
+        }
+        .gif_video{
+            margin-top: 50px;
+            display: inline-block;
+            width: 60%;
+            height: 55vh;
+            align-self: center;
+            position: relative;
+            background-image: url("../../img/illast/Sign up.gif");
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+    .reg_form{
+        padding-top: 50px;
+        flex-direction: row;
+        .containt{
+            form{
+                width: 500px;
+                .submit{
+                    margin-left: 37%;
+                }
+                .reg_inputs_one{
+                    background-image: url("../img/Blob/n1_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f1_500.svg");
+                    }
+                }
+                .reg_inputs_two{
+                    background-image: url("../img/Blob/n5_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f5_500.svg");
+                    }
+                }
+                .reg_inputs_three{
+                    background-image: url("../img/Blob/n6_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f6_500.svg");
+                    }
+                }
+                .reg_inputs_four{
+                    background-image: url("../img/Blob/n7_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f7_500.svg");
+                    }
+                }
+                .reg_inputs_five{
+                    background-image: url("../img/Blob/n2_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f2_500.svg");
+                    }
+                }
+                .reg_inputs_six{
+                    background-image: url("../img/Blob/n3_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f3_500.svg");
+                    }
+                }
+                .reg_inputs_seven{
+                    background-image: url("../img/Blob/n4_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f4_500.svg");
+                    }
+                }
+            }
+        }
+        .gif_video{
+            display: inline-block;
+            width: 76%;
+            height: 68vh;
+            align-self: center;
+            position: relative;
+            background-image: url("../../img/illast/Enter OTP.gif");
+            background-size: cover  ;
+            background-repeat: no-repeat;
+            margin-right: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+    .reg_form{
+        .containt{
+            form{
+                width: 500px;
+                .submit{
+                    margin-left: 37%;
+                }
+                .reg_inputs_one{
+                    background-image: url("../img/Blob/n1_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f1_500.svg");
+                    }
+                }
+                .reg_inputs_two{
+                    background-image: url("../img/Blob/n5_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f5_500.svg");
+                    }
+                }
+                .reg_inputs_three{
+                    background-image: url("../img/Blob/n6_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f6_500.svg");
+                    }
+                }
+                .reg_inputs_four{
+                    background-image: url("../img/Blob/n7_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f7_500.svg");
+                    }
+                }
+                .reg_inputs_five{
+                    background-image: url("../img/Blob/n2_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f2_500.svg");
+                    }
+                }
+                .reg_inputs_six{
+                    background-image: url("../img/Blob/n3_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f3_500.svg");
+                    }
+                }
+                .reg_inputs_seven{
+                    background-image: url("../img/Blob/n4_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f4_500.svg");
+                    }
+                }
+            }
+        }
+        .gif_video{
+            display: inline-block;
+            width: 76%;
+            height: 75vh;
+            align-self: center;
+            position: relative;
+            background-image: url("../../img/illast/Sign up.gif");
+            background-size: cover  ;
+            background-repeat: no-repeat;
+            margin-right: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1501px) and (max-width: 2000px) {
+    .reg_form{
+        .containt{
+            form{
+                width: 500px;
+                .submit{
+                    margin-left: 37%;
+                }
+                .reg_inputs_one{
+                    background-image: url("../img/Blob/n1_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f1_500.svg");
+                    }
+                }
+                .reg_inputs_two{
+                    background-image: url("../img/Blob/n5_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f5_500.svg");
+                    }
+                }
+                .reg_inputs_three{
+                    background-image: url("../img/Blob/n6_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f6_500.svg");
+                    }
+                }
+                .reg_inputs_four{
+                    background-image: url("../img/Blob/n7_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f7_500.svg");
+                    }
+                }
+                .reg_inputs_five{
+                    background-image: url("../img/Blob/n2_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f2_500.svg");
+                    }
+                }
+                .reg_inputs_six{
+                    background-image: url("../img/Blob/n3_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f3_500.svg");
+                    }
+                }
+                .reg_inputs_seven{
+                    background-image: url("../img/Blob/n4_500.svg");
+                    &:focus{
+                        background-image: url("../img/Blob/f4_500.svg");
+                    }
+                }
+            }
+        }
+        .gif_video{
+            display: inline-block;
+            width: 80%;
+            height: 88vh;
+            max-height: 97vh;
+            align-self: center;
+            position: relative;
+            background-image: url("../../img/illast/Sign up.gif");
+            background-size: cover  ;
+            background-repeat: no-repeat;
+            margin-right: 50px;
+        }
+    }
+}
+
