@@ -19,5 +19,11 @@
 @use 'Forms/otp';
 @use 'Forms/forget_password';
 @use 'Forms/reset_password';
+// dashboard design
+@use 'Dashboard/home_dashboard';
+@use 'Dashboard/order_dashboard';
+@use 'Dashboard/Forms/add_product';
+@use 'Dashboard/Show All/all_categories';
+
 
 

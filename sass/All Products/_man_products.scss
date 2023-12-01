@@ -22,6 +22,7 @@
 hr{
     width: 80%;
     margin: auto;
+    margin-top: 50px;
     color: #3F4045;
     opacity: 0.4;
 }
@@ -31,21 +32,157 @@ hr{
     flex-direction: column;
     margin-top: 30px;
     .title{
-        margin-top: 30px;
         margin-left: 15px;
         font-size: $top_rated_header_size;
         margin-bottom: 20px;
-        // padding: 20px;
-        // height: 5vh;
-        // background-image: url('../img/Blob/Vector (4).svg');
-        // background-repeat: no-repeat;
-        // background-size: cover;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .sub_category_links{
+            position: relative;
+            margin-right: 50px;
+            .dropbtn{
+                width: 100px;
+                height: 75px;
+                font-size: 25px;
+                color: #3F4045;
+                background-color: transparent;
+                border: none;
+                background-image: url('../../img/Blob/jacket.svg');
+                background-position: center;
+                background-size: cover;
+                transition-duration: 0.5s;
+                &:hover{
+                    background-image: url('../../img/Blob/jacket hover.svg');
+                    background-position: center;
+                    background-size: cover;
+                    color: #E9E8DE;
+                    text-shadow: 2px 2px 4px #e9e8de;
+                }
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #e9e8de;
+                min-width: 100px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                border-radius: 12px;
+                a{
+                    font-size: 20px;
+                    display: block;
+                    width: 50%;
+                    text-align: center;
+                    margin: auto;
+                    padding: 10px;
+                    color: #3F4045;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid ;
+                    border-bottom-color: rgba($color: #3F4045, $alpha: 0.5);
+                    &:last-child{
+                        border-bottom: none;
+                        border-bottom-color: none;
+                    }
+                    &:hover{
+                        text-shadow: 2px 2px 4px #3F4045;
+                    }
+                }
+            }
+            &:hover{
+                .dropdown-content{
+                    display: block;
+                }
+            }
+        }
     }
-
+    // .jacket{
+    //     width: 65px;
+    //     height: 50px;
+    //     background-image: url('../../img/Blob/jacket.svg');
+    //     background-position: center;
+    //     background-size: cover;
+    //     margin-right: 40px;
+    //     transition-duration: 0.5s;
+    //     &:hover{
+    //         background-image: url('../../img/Blob/jacket hover.svg');
+    //         background-position: center;
+    //         background-size: cover;
+    //         a{
+    //             color: #E9E8DE;
+    //             text-shadow: 2px 2px 4px #e9e8de;
+    //         }
+    //     }
+    // }
+    // .pant{
+    //     width: 60px;
+    //     height: 42px;
+    //     background-image: url('../../img/Blob/pant.svg');
+    //     background-position: center;
+    //     background-size: cover;
+    //     margin-right: 40px;
+    //     transition-duration: 0.5s;
+    //     a{
+    //         margin-left: 10px;
+    //     }
+    //     &:hover{
+    //         background-image: url('../../img/Blob/pants hover.svg');
+    //         background-position: center;
+    //         background-size: cover;
+    //         a{
+    //             color: #E9E8DE;
+    //             text-shadow: 2px 2px 4px #e9e8de;
+    //         }
+    //     }
+    // }
+    // .shirt{
+    //     width: 122px;
+    //     height: 50px;
+    //     background-image: url('../../img/Blob/shirts and tops.svg');
+    //     background-position: center;
+    //     background-size: cover;
+    //     transition-duration: 0.5s;
+    //     &:hover{
+    //         background-image: url('../../img/Blob/shirts and tops hover.svg');
+    //         background-position: center;
+    //         background-size: cover;
+    //         a{
+    //             color: #E9E8DE;
+    //             text-shadow: 2px 2px 4px #e9e8de;
+    //         }
+    //     }
+    // }
+    // .short{
+    //     width: 70px;
+    //     height: 50px;
+    //     background-image: url('../../img/Blob/short.svg');
+    //     background-position: center;
+    //     background-size: cover;
+    //     margin-top: 20px;
+    //     transition-duration: 0.5s;
+    //     &:hover{
+    //         background-image: url('../../img/Blob/shorts hover.svg');
+    //         background-position: center;
+    //         background-size: cover;
+    //         a{
+    //             color: #E9E8DE;
+    //             text-shadow: 2px 2px 4px #e9e8de;
+    //         }
+    //     }
+    // }
+    // a{
+    //     text-decoration: none;
+    //     display: block;
+    //     font-size: 25px;
+    //     color: #3F4045;
+    //     margin-top: 12px;
+    // }
+    
     .first_product{
         display: flex;
         margin-top: 50px;
         margin-bottom: 100px;
+        flex-direction: column;
         a{
             width: fit-content;
             height: fit-content;
@@ -85,6 +222,66 @@ hr{
                 }
             }
         }
+        // added
+        .color-content{
+            margin-top: 5.2rem;
+            margin-left: 130px;
+        }
+        .color{
+            width: 35px;
+            height: 35px;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+        }
+        .color:hover{
+            width: 40px;
+            height: 40px;
+            svg{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .active-color{
+            width: 40px;
+            height: 40px;
+            svg{
+                width: 40px;
+                height: 40px;
+            } 
+        }
+        .color-groups{
+            padding: 1rem 0;
+            display: flex;
+        }
+        // added
+
+        // addded
+        .price_stock{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+
+            .price{
+                color:rgba($color: #3F4045, $alpha: 0.7);
+                font-size: 20px;
+            }
+            .in_stock{
+                font-size: 20px;
+                color: #548686; 
+                text-transform: uppercase;
+            }
+            .out_of_stock{
+                font-size: 20px;
+                color: #BF623B; 
+                text-transform: uppercase;
+            }
+            // added
+        }
     }
 
 }
@@ -102,13 +299,68 @@ hr{
 
 }
 
+@media screen and (min-width: 800px) and (max-width:1024px){
+    .man_product{
+        flex-wrap: wrap;
+        flex-direction: row !important;
+        .first_product{
+            flex-basis: 50%;
+        }
+        .title{
+            flex-direction: row;
+            flex-basis: 100%;
+            .sub_category_links{
+                gap: 25px;
+                .jacket{
+                    margin-right: 0px;
+                }
+                .pant{
+                    margin-right: 0px;
+                }
+                .shirt{
+                    margin-right: 0px;
+                }
+                .short{
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width:2000px){
+    .man_product{
+        flex-wrap: wrap;
+        flex-direction: row !important;
+        .first_product{
+            flex-basis: 50%;
+        }
+        .title{
+            flex-basis: 100%;
+            flex-direction: row;
+            .sub_category_links{
+                gap: 25px;
+                .jacket{
+                    margin-right: 0px;
+                }
+                .pant{
+                    margin-right: 0px;
+                }
+                .shirt{
+                    margin-right: 0px;
+                }
+                .short{
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 768px) {
     .man_product{
         flex-wrap: wrap;
         flex-direction: row !important;
-        .title{
-            flex-basis: 100%;
-        }
         .first_product{
             flex-basis: 50%;
         }
@@ -117,25 +369,10 @@ hr{
 
 @media screen and (min-width: 1024px) {
     .man_product{
-        .title{
-            flex-basis: 100%;
-        }
         .first_product{
             flex-basis: 30%;
             margin-left: 20px;
         }
 
-    }
-}
-
-@media screen and (min-width: 1500px) {
-    .man_product{
-        .title{
-            flex-basis: 100%;
-        }
-        .first_product{
-            flex-basis: 30%;
-            margin-left: 35px;
-        }
     }
 }
